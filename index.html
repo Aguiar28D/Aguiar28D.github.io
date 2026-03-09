@@ -1,368 +1,471 @@
 <!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-  		<meta charset="utf-8" />
-  		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  		<link rel="stylesheet" href="assets/css/main.css" />
-		<meta name="description" content="Diego Aguiar - Economist and Senior Data Analyst. Portfolio, CV and Data Science projects.">
-		<meta name="keywords" content="Diego Aguiar, data analyst, economist, economia, economía, CV, portfolio, Uruguay, data science, fraud prevention, Python, SQL, statistics, economista, analista, datos, ciencia, macroeconomía, data analytics, Diego Aguiar Anzalas, Uruguay, uruguay, UCU, ASU, UGA, UTEC, MIT, ORT">
-		<meta name="author" content="Diego Aguiar">
-		<title>Diego Aguiar | Sr. Data Analyst & Economist</title>
-	</head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-59Z3BB3ZPY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta name="description" content="Diego Aguiar - Economist and Senior Data Analyst. Portfolio, CV and Data Science projects.">
+    <meta name="keywords" content="Diego Aguiar, data analyst, economist, economia, economía, CV, portfolio, Uruguay, data science, fraud prevention, Python, SQL, statistics, economista, analista, datos, ciencia, macroeconomía, data analytics, Diego Aguiar Anzalas, Uruguay, uruguay, UCU, ASU, UGA, UTEC, MIT, ORT">
+    <meta name="author" content="Diego Aguiar">
+    <title>Diego Aguiar | Sr. Data Analyst & Economist</title>
+  </head>
 
-	
-  gtag('config', 'G-59Z3BB3ZPY');
-</script>
-	<body class="is-preload">
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-59Z3BB3ZPY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-59Z3BB3ZPY');
+  </script>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/DAA.jpg" alt="" /></a>
-					<h1><strong>I am Diego Aguiar</strong>,  <br />
-						<strong> Sr. Data Analyst | Economics MSc with Technical & Business Insight</strong></a>.</h1>
-				</div>
-			</header>
+  <body class="is-preload">
 
-		<!-- Main -->
-			<div id="main">
+    <!-- ═══════════════════════════════ SIDEBAR ═══════════════════════════════ -->
+    <header id="header">
+      <div class="inner">
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>Hi! I'm Diego</h2>
-						</header>
-						<p>Hi! I'm Diego, an economist and senior data analyst based in Montevideo, Uruguay.
-
-I hold two master's degrees in Economics from U.S. universities and have over five years of experience using data to solve business problems, especially in fraud prevention and customer behavior. I currently work at Mercado Libre, where I build analytics tools to reduce fraud and optimize business performance.
-
-I'm passionate about applying data science to real-world challenges and currently expanding my skills through a postgraduate specialization in Data Science and Artificial Intelligence (UTEC + MIT).
-
-I'm fluent in Python, SQL, and R, and I enjoy combining technical work with business insight. In the past, I've also taught university-level courses including Principles of Macroeconomics, Intermediate Macroeconomics, Calculus, Statisics and Applied Data Science. </p>
-						<ul class="actions">
-							<li><a href="assets/CV_Diego_Aguiar.pdf" class="button" target="_blank">Download CV</a></li>
-						</ul>
-					</section>
-
-				<!-- Two -->
-					<section id="two">
-						<h2>Projects</h2>
-
-<!-- Filter Buttons -->
-<div id="project-filters" style="margin-bottom: 2rem; display: flex; gap: 0.6rem; flex-wrap: wrap;">
-  <button class="filter-btn active" data-filter="ai" onclick="filterProjects('ai')">AI & Data Science</button>
-  <button class="filter-btn" data-filter="analysis" onclick="filterProjects('analysis')">Data Analysis</button>
-  <button class="filter-btn" data-filter="stats" onclick="filterProjects('stats')">Statistics & Econometrics</button>
-  <button class="filter-btn" data-filter="all" onclick="filterProjects('all')">All</button>
-</div>
-
-<style>
-  .filter-btn {
-    padding: 0.5rem 1.2rem;
-    border: 2px solid #ccc;
-    background: white;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 0.9em;
-    font-family: inherit;
-    color: #666;
-    transition: all 0.2s ease;
-  }
-  .filter-btn:hover {
-    border-color: #007acc;
-    color: #007acc;
-  }
-  .filter-btn.active {
-    background: #007acc;
-    border-color: #007acc;
-    color: white;
-    font-weight: 600;
-  }
-  .project-item-wrapper {
-    transition: opacity 0.3s ease;
-  }
-  .project-item-wrapper.hidden {
-    display: none;
-  }
-</style>
-
-<div class="project-list">
-
-  <!-- Proyecto 11: Chatbot Autos RAG — AI -->
-  <div class="project-item-wrapper" data-category="ai">
-    <div class="project-item">
-      <div style="text-align:right; padding: 0 1rem; margin-bottom: 0.5rem;">
-        <a href="https://nbviewer.org/github/Aguiar28D/chatbot-autos-rag/blob/main/Deep_Learning_Final_Pitch.pdf"
-           target="_blank" style="font-size: 0.9em; color: #007acc;">
-           📄 View PDF presentation
+        <a href="#" class="image avatar">
+          <img src="images/DAA.jpg" alt="Diego Aguiar" />
         </a>
-        <span style="margin: 0 0.5rem;">•</span>
-        <a href="https://github.com/Aguiar28D/chatbot-autos-rag"
-           target="_blank" style="font-size: 0.9em; color: #007acc;">
-           <i class="fab fa-github"></i> View on GitHub
-        </a>
+
+        <p class="sidebar-name">Diego Aguiar</p>
+        <p class="sidebar-title">Sr. Data Analyst · Economist · AI</p>
+        <p class="sidebar-tagline">Turning data into decisions at Mercado Libre. UTEC + MIT Postgrad.</p>
+
+        <hr class="sidebar-divider" />
+
+        <nav style="text-align:right; font-size:0.78em; line-height:2.2em;">
+          <a href="#one"  style="display:block; color:rgba(255,255,255,0.45); border:none; transition:color 0.2s;" onmouseover="this.style.color='#22a060'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">About</a>
+          <a href="#two"  style="display:block; color:rgba(255,255,255,0.45); border:none; transition:color 0.2s;" onmouseover="this.style.color='#22a060'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Projects</a>
+          <a href="#three" style="display:block; color:rgba(255,255,255,0.45); border:none; transition:color 0.2s;" onmouseover="this.style.color='#22a060'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Contact</a>
+        </nav>
+
       </div>
-      <a href="https://nbviewer.org/github/Aguiar28D/chatbot-autos-rag/blob/main/chatbot_autos_rag.ipynb"
-         class="project-card" target="_blank">
-        <div class="project-image-wrapper">
-          <img src="images/thumbs/chatbot_rag.PNG" alt="Chatbot Autos RAG">
+
+      <!-- Footer inside sidebar -->
+      <footer id="footer">
+        <ul class="icons">
+          <li><a href="https://www.twitter.com/aguiar28d"  class="icon brands fa-x-twitter"  title="Twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="https://www.github.com/aguiar28d"   class="icon brands fa-github"      title="GitHub"><span class="label">GitHub</span></a></li>
+          <li><a href="https://www.linkedin.com/in/diego-aguiar-anzalas-2350a96b/" class="icon brands fa-linkedin" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
+        </ul>
+        <ul class="copyright">
+          <li>Diego Aguiar &copy; 2025</li>
+        </ul>
+      </footer>
+    </header>
+
+    <!-- ═══════════════════════════════ MAIN ═══════════════════════════════ -->
+    <div id="main">
+
+      <!-- ── ABOUT ── -->
+      <section id="one">
+
+        <header class="major">
+          <span class="section-label">About me</span>
+          <h2>Hi! I'm Diego</h2>
+        </header>
+
+        <p class="bio-intro">
+          Economist & senior data analyst solving
+          <span class="bio-highlight">real business problems</span>
+          with data, ML, and good judgment.
+        </p>
+
+        <p class="bio-body">
+          Based in Montevideo, Uruguay, I hold two master's degrees in Economics from U.S. universities
+          and have over five years of experience turning messy data into clear decisions — currently at
+          Mercado Libre, where I focus on fraud prevention and business analytics. I'm expanding into
+          AI and Deep Learning through a postgraduate specialization at UTEC + MIT, and I've taught
+          university-level Macroeconomics, Calculus, and Applied Data Science.
+        </p>
+
+        <!-- Stats -->
+        <div class="bio-stats">
+          <div class="bio-stat-item">
+            <span class="bio-stat-number">5+</span>
+            <span class="bio-stat-label">Years Experience</span>
+          </div>
+          <div class="bio-stat-item">
+            <span class="bio-stat-number">11</span>
+            <span class="bio-stat-label">Projects</span>
+          </div>
+          <div class="bio-stat-item">
+            <span class="bio-stat-number">2</span>
+            <span class="bio-stat-label">Master's Degrees</span>
+          </div>
+          <div class="bio-stat-item">
+            <span class="bio-stat-number">3</span>
+            <span class="bio-stat-label">Languages</span>
+          </div>
         </div>
-        <div class="project-info">
-          <h3>Used Car Search Chatbot with RAG</h3>
-          <p>Conversational AI chatbot that enables semantic search over 38,531 used vehicle listings using
-          Retrieval Augmented Generation (RAG). Built with LangChain, FAISS, and GPT-4o-mini.
-          Understands natural language queries like "affordable family SUV" and maintains conversation
-          context for follow-up questions. Final project for the Deep Learning module (UTEC + MIT).</p>
+
+        <!-- Skills -->
+        <div class="skills-section">
+
+          <div class="skills-group">
+            <span class="skills-group-label">Languages</span>
+            <div class="skills-pills">
+              <span class="skill-pill highlight">Python</span>
+              <span class="skill-pill highlight">SQL</span>
+              <span class="skill-pill highlight">R</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <span class="skills-group-label">AI &amp; Machine Learning</span>
+            <div class="skills-pills">
+              <span class="skill-pill">PyTorch</span>
+              <span class="skill-pill">LangChain</span>
+              <span class="skill-pill">FAISS</span>
+              <span class="skill-pill">scikit-learn</span>
+              <span class="skill-pill">CatBoost</span>
+              <span class="skill-pill">RAG</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <span class="skills-group-label">Data &amp; Visualization</span>
+            <div class="skills-pills">
+              <span class="skill-pill">Pandas</span>
+              <span class="skill-pill">Tableau</span>
+              <span class="skill-pill">Matplotlib</span>
+              <span class="skill-pill">ggplot2</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <span class="skills-group-label">Tools</span>
+            <div class="skills-pills">
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">Google Colab</span>
+              <span class="skill-pill">FastAPI</span>
+              <span class="skill-pill">Optuna</span>
+            </div>
+          </div>
+
         </div>
-      </a>
-    </div>
-  </div>
 
-  <!-- Proyecto 10: RoastAI — AI -->
-  <div class="project-item-wrapper" data-category="ai">
-    <div style="text-align:right; padding: 0 1rem; margin-bottom: 0.5rem;">
-      <a href="https://nbviewer.org/github/Aguiar28D/RoastAI/blob/main/RoastAI_Project.pptx.pdf"
-         target="_blank" style="font-size: 0.9em; color: #007acc;">
-         📄 View PDF presentation
-      </a>
-      <span style="margin: 0 0.5rem;">•</span>
-      <a href="https://github.com/Aguiar28D/RoastAI"
-         target="_blank" style="font-size: 0.9em; color: #007acc;">
-         <i class="fab fa-github"></i> View on GitHub
-      </a>
-      <span style="margin: 0 0.5rem;">•</span>
-      <a href="https://colab.research.google.com/drive/1ln9wYb1hQwiGDRsE3UKa9J6rKspmVz6q"
-         target="_blank" style="font-size: 0.9em; color: #007acc;">
-         <i class="fab fa-google"></i> Open in Colab
-      </a>
-    </div>
-    <a href="https://aguiar28d.github.io/RoastAI/roastai_complete_analysis.html"
-       class="project-card" target="_blank">
-      <div class="project-image-wrapper">
-        <img src="images/thumbs/roastai.PNG" alt="RoastAI">
-      </div>
-      <div class="project-info">
-        <h3>RoastAI: Computer Vision for Coffee Roast Classification</h3>
-        <p>Comprehensive data science project combining exploratory analysis of 60+ years of global coffee production data
-        (1960-2023) with a deep learning computer vision model. Built a ResNet18-based classifier to automatically identify
-        coffee bean roast levels with 85%+ accuracy. Includes Grad-CAM interpretability analysis,
-        production trends visualization, and regional market insights.</p>
-      </div>
-    </a>
-  </div>
+        <ul class="actions">
+          <li><a href="assets/CV_Diego_Aguiar.pdf" class="button primary" target="_blank">
+            <i class="fas fa-download" style="margin-right:0.5em;"></i>Download CV
+          </a></li>
+        </ul>
 
-  <!-- Proyecto 9: Houses — AI -->
-  <div class="project-item-wrapper" data-category="ai">
-    <div class="project-item">
-      <div style="text-align:right; padding: 0 1rem;">
-        <a href="https://nbviewer.org/github/Aguiar28D/House_price_prediction_uruguay/blob/main/Prediccion_venta_casas.pdf"
-           target="_blank" style="font-size: 0.9em; color: #007acc;">
-           📄 View PDF presentation
-        </a>
-      </div>
-      <a href="https://aguiar28d.github.io/House_price_prediction_uruguay/Casas.html"
-         class="project-card" target="_blank">
-        <div class="project-image-wrapper">
-          <img src="./images/thumbs/casas_variables_expli.PNG" alt="Casas">
+      </section>
+
+      <!-- ── PROJECTS ── -->
+      <section id="two">
+
+        <span class="section-label">Work</span>
+        <h2>Projects</h2>
+
+        <!-- Filter bar -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ai">AI &amp; Data Science</button>
+          <button class="filter-btn" data-filter="analysis">Data Analysis</button>
+          <button class="filter-btn" data-filter="econometrics">Statistics &amp; Econometrics</button>
         </div>
-        <div class="project-info">
-          <h3>House Price Prediction in Uruguay</h3>
-          <p>Machine learning project focused on predicting house prices in Uruguay using real estate listings data
-          from Mercado Libre and El Gallito (2023–2025). The analysis includes data cleaning, outlier treatment,
-          feature engineering, and model comparison (Linear Regression vs CatBoost), with hyperparameter tuning
-          using Optuna. Best performance is achieved for Montevideo, with a MAPE of approximately 25%.</p>
+
+        <div class="project-list">
+
+          <!-- ─ FEATURED AI PROJECTS ─ -->
+          <div class="category-divider" data-category-label="ai analysis econometrics">
+            <span>AI &amp; Machine Learning</span>
+          </div>
+
+          <!-- Proyecto 11: Chatbot Autos RAG -->
+          <div class="project-item" data-category="ai">
+            <div class="project-meta">
+              <a href="https://nbviewer.org/github/Aguiar28D/chatbot-autos-rag/blob/main/Deep_Learning_Final_Pitch.pdf" target="_blank">
+                <i class="fas fa-file-pdf"></i> Presentation
+              </a>
+              <span class="sep">·</span>
+              <a href="https://github.com/Aguiar28D/chatbot-autos-rag" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+            <a href="https://nbviewer.org/github/Aguiar28D/chatbot-autos-rag/blob/main/chatbot_autos_rag.ipynb"
+               class="project-card featured" target="_blank">
+              <div class="project-image-wrapper">
+                <img src="images/thumbs/chatbot_rag.PNG" alt="Chatbot Autos RAG">
+              </div>
+              <div class="project-info">
+                <h3>Used Car Search Chatbot with RAG</h3>
+                <p>Conversational AI chatbot for semantic search over 38,531 used vehicle listings. Understands natural language queries and maintains conversation context. Final project for the Deep Learning module (UTEC + MIT).</p>
+                <div class="tech-tags">
+                  <span class="tech-tag">LangChain</span>
+                  <span class="tech-tag">FAISS</span>
+                  <span class="tech-tag">GPT-4o-mini</span>
+                  <span class="tech-tag">RAG</span>
+                  <span class="tech-tag">Python</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Proyecto 10: RoastAI -->
+          <div class="project-item" data-category="ai">
+            <div class="project-meta">
+              <a href="https://nbviewer.org/github/Aguiar28D/RoastAI/blob/main/RoastAI_Project.pptx.pdf" target="_blank">
+                <i class="fas fa-file-pdf"></i> Presentation
+              </a>
+              <span class="sep">·</span>
+              <a href="https://github.com/Aguiar28D/RoastAI" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <span class="sep">·</span>
+              <a href="https://colab.research.google.com/drive/1ln9wYb1hQwiGDRsE3UKa9J6rKspmVz6q" target="_blank">
+                <i class="fab fa-google"></i> Colab
+              </a>
+            </div>
+            <a href="https://aguiar28d.github.io/RoastAI/roastai_complete_analysis.html"
+               class="project-card featured" target="_blank">
+              <div class="project-image-wrapper">
+                <img src="images/thumbs/roastai.PNG" alt="RoastAI">
+              </div>
+              <div class="project-info">
+                <h3>RoastAI: Computer Vision for Coffee Roast Classification</h3>
+                <p>ResNet18-based classifier to identify coffee bean roast levels with 85%+ accuracy, plus 60+ years of global production analysis. Includes Grad-CAM interpretability and regional market insights.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag">PyTorch</span>
+                  <span class="tech-tag">ResNet18</span>
+                  <span class="tech-tag">Grad-CAM</span>
+                  <span class="tech-tag neutral">Python</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Proyecto 9: Houses -->
+          <div class="project-item" data-category="ai">
+            <div class="project-meta">
+              <a href="https://nbviewer.org/github/Aguiar28D/House_price_prediction_uruguay/blob/main/Prediccion_venta_casas.pdf" target="_blank">
+                <i class="fas fa-file-pdf"></i> Presentation
+              </a>
+            </div>
+            <a href="https://aguiar28d.github.io/House_price_prediction_uruguay/Casas.html"
+               class="project-card featured" target="_blank">
+              <div class="project-image-wrapper">
+                <img src="./images/thumbs/casas_variables_expli.PNG" alt="Casas">
+              </div>
+              <div class="project-info">
+                <h3>House Price Prediction in Uruguay</h3>
+                <p>ML project predicting house prices from Mercado Libre & El Gallito listings (2023–2025). Compares Linear Regression vs CatBoost with Optuna tuning. Best MAPE ~25% for Montevideo.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag">CatBoost</span>
+                  <span class="tech-tag">Optuna</span>
+                  <span class="tech-tag">scikit-learn</span>
+                  <span class="tech-tag neutral">Python</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- ─ DATA ANALYSIS ─ -->
+          <div class="category-divider" data-category-label="analysis ai econometrics">
+            <span>Data Analysis</span>
+          </div>
+
+          <!-- Proyecto 8: Montevideo -->
+          <div class="project-item" data-category="analysis">
+            <div class="project-meta">
+              <a href="https://nbviewer.org/github/Aguiar28D/Montevideo_se_mueve/blob/main/Montevideo_se_mueve.pdf" target="_blank">
+                <i class="fas fa-file-pdf"></i> Presentation
+              </a>
+            </div>
+            <a href="https://nbviewer.org/github/Aguiar28D/Montevideo_se_mueve/blob/main/Entrega_04_Final.ipynb"
+               class="project-card">
+              <div class="project-image-wrapper">
+                <img src="./images/thumbs/montevideo.PNG" alt="Montevideo se mueve">
+              </div>
+              <div class="project-info">
+                <h3>Montevideo Moves <span style="font-weight:400; color:#bbb;">(Spanish)</span></h3>
+                <p>Traffic incident analysis in Montevideo using government data. Identifies critical patterns by age, time, location, and vehicle type. Proposes public policy based on findings.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag neutral">Python</span>
+                  <span class="tech-tag neutral">UTEC+MIT</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Proyecto 7: Student Performance -->
+          <div class="project-item" data-category="analysis">
+            <a href="https://nbviewer.org/github/aguiar28d/Aguiar28D.github.io/blob/main/Student_Performance.ipynb"
+               class="project-card">
+              <div class="project-image-wrapper">
+                <img src="./images/thumbs/gpa.PNG" alt="Student Performance">
+              </div>
+              <div class="project-info">
+                <h3>Student Performance</h3>
+                <p>EDA and econometric modeling of student GPA using Kaggle data. Compares linear regression and decision trees to identify key performance drivers.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag neutral">Python</span>
+                  <span class="tech-tag neutral">Regression</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Proyecto 1: Covid -->
+          <div class="project-item" data-category="analysis">
+            <a href="https://public.tableau.com/app/profile/diego.aguiar/viz/Covid_16366728561580/Dashboard1?publish=yes"
+               class="project-card">
+              <div class="project-image-wrapper">
+                <img src="./images/thumbs/covid.PNG" alt="Covid 2021">
+              </div>
+              <div class="project-info">
+                <h3>Covid 2021</h3>
+                <p>Interactive Tableau dashboard for pandemic indicators — confirmed cases, mortality, and regional trends — built on SQL-cleaned data.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag neutral">Tableau</span>
+                  <span class="tech-tag neutral">SQL</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Proyecto 2: Customer Exploration -->
+          <div class="project-item" data-category="analysis">
+            <a href="https://rpubs.com/Aguiar28D/835587" class="project-card">
+              <div class="project-image-wrapper">
+                <img src="./images/thumbs/consumer.PNG" alt="Customer Exploration">
+              </div>
+              <div class="project-info">
+                <h3>Customer Exploration for Marketing Campaign</h3>
+                <p>Exploratory analysis in R of customer segmentation and response behavior in a direct marketing campaign.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag neutral">R</span>
+                  <span class="tech-tag neutral">EDA</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- ─ ECONOMETRICS ─ -->
+          <div class="category-divider" data-category-label="econometrics ai analysis">
+            <span>Statistics &amp; Econometrics</span>
+          </div>
+
+          <!-- Proyecto 3: US Elections -->
+          <div class="project-item" data-category="econometrics">
+            <a href="https://rpubs.com/Aguiar28D/734894" class="project-card">
+              <div class="project-image-wrapper">
+                <img src="./images/thumbs/map_us.PNG" alt="US Elections">
+              </div>
+              <div class="project-info">
+                <h3>US Presidential Elections</h3>
+                <p>Interactive maps in R exploring geographic and demographic voting patterns. Tracks how states changed preferences over time.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag neutral">R</span>
+                  <span class="tech-tag neutral">Visualization</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Proyecto 4: Reproduction Rights -->
+          <div class="project-item" data-category="econometrics">
+            <a href="https://rpubs.com/Aguiar28D/742803" class="project-card">
+              <div class="project-image-wrapper">
+                <img src="./images/thumbs/fertility.PNG" alt="Reproduction Rights">
+              </div>
+              <div class="project-info">
+                <h3>Reproduction Rights</h3>
+                <p>Google Trends API + R analysis linking search interest in reproductive health to policy announcements and court rulings.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag neutral">R</span>
+                  <span class="tech-tag neutral">API</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Proyecto 5: Regression Discontinuity -->
+          <div class="project-item" data-category="econometrics">
+            <a href="https://rpubs.com/Aguiar28D/730948" class="project-card">
+              <div class="project-image-wrapper">
+                <img src="./images/thumbs/rd.PNG" alt="Regression Discontinuity">
+              </div>
+              <div class="project-info">
+                <h3>Regression Discontinuity</h3>
+                <p>Replication of Carpenter &amp; Dobkin (2009) in R — sharp RD design estimating causal effects of Medicare eligibility around age 65.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag neutral">R</span>
+                  <span class="tech-tag neutral">Causal Inference</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Proyecto 6: DiD -->
+          <div class="project-item" data-category="econometrics">
+            <a href="https://rpubs.com/Aguiar28D/727687" class="project-card">
+              <div class="project-image-wrapper">
+                <img src="./images/thumbs/card.PNG" alt="Difference in Differences">
+              </div>
+              <div class="project-info">
+                <h3>Difference in Differences</h3>
+                <p>Reproduction of Card &amp; Krueger (1994) in R — minimum wage effects via DiD comparing NJ and PA fast food employment.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag neutral">R</span>
+                  <span class="tech-tag neutral">Causal Inference</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div><!-- /.project-list -->
+      </section>
+
+      <!-- ── CONTACT ── -->
+      <section id="three">
+        <h2>Get In Touch</h2>
+        <p>Open to opportunities, collaborations, and interesting conversations.</p>
+        <div class="col-4 col-12-small">
+          <ul class="labeled-icons">
+            <li>
+              <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+              <a href="mailto:aguiar28d@gmail.com">aguiar28d@gmail.com</a>
+            </li>
+          </ul>
         </div>
-      </a>
-    </div>
-  </div>
+      </section>
 
-  <!-- Proyecto 8: Montevideo — ANALYSIS -->
-  <div class="project-item-wrapper hidden" data-category="analysis">
-    <div class="project-item">
-      <div style="text-align:right; padding: 0 1rem;">
-        <a href="https://nbviewer.org/github/Aguiar28D/Montevideo_se_mueve/blob/main/Montevideo_se_mueve.pdf"
-           target="_blank" style="font-size: 0.9em; color: #007acc;">
-           📄 View PDF presentation
-        </a>
-      </div>
-      <a href="https://nbviewer.org/github/Aguiar28D/Montevideo_se_mueve/blob/main/Entrega_04_Final.ipynb"
-         class="project-card">
-        <div class="project-image-wrapper">
-          <img src="./images/thumbs/montevideo.PNG" alt="Montevideo se mueve">
-        </div>
-        <div class="project-info">
-          <h3>Montevideo Moves (Spanish)</h3>
-          <p>In this project, we analyze traffic incidents in Montevideo using real-world data from the Uruguayan government.
-          The goal is to identify critical patterns (age, time, location, vehicle type) and propose public policy based on data.
-          Includes Python code, visualizations, a full presentation, and a final report for the UTEC+MIT specialization.</p>
-        </div>
-      </a>
-    </div>
-  </div>
+    </div><!-- /#main -->
 
-  <!-- Proyecto 7: Student Performance — ANALYSIS -->
-  <div class="project-item-wrapper hidden" data-category="analysis">
-    <a href="https://nbviewer.org/github/aguiar28d/Aguiar28D.github.io/blob/main/Student_Performance.ipynb" class="project-card">
-      <div class="project-image-wrapper">
-        <img src="./images/thumbs/gpa.PNG" alt="Student Performance">
-      </div>
-      <div class="project-info">
-        <h3>Student Performance</h3>
-        <p>In this project, I use Python to analyze student performance using a dataset from Kaggle.
-        I explore which factors best explain GPA through exploratory data analysis and econometric modeling.
-        Finally, I build predictive models using linear regression and decision trees, and compare their performance.</p>
-      </div>
-    </a>
-  </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-  <!-- Proyecto 1: Covid — ANALYSIS -->
-  <div class="project-item-wrapper hidden" data-category="analysis">
-    <a href="https://public.tableau.com/app/profile/diego.aguiar/viz/Covid_16366728561580/Dashboard1?publish=yes" class="project-card">
-      <div class="project-image-wrapper">
-        <img src="./images/thumbs/covid.PNG" alt="Covid 2021">
-      </div>
-      <div class="project-info">
-        <h3>Covid 2021</h3>
-        <p>Built an interactive Tableau dashboard to visualize key pandemic indicators such as confirmed cases, mortality, and regional trends.
-        Data was cleaned and queried using SQL, with a focus on real-time updates and storytelling for exploratory public health insights.</p>
-      </div>
-    </a>
-  </div>
+    <!-- Filter logic -->
+    <script>
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.dataset.filter;
 
-  <!-- Proyecto 2: Customer — ANALYSIS -->
-  <div class="project-item-wrapper hidden" data-category="analysis">
-    <a href="https://rpubs.com/Aguiar28D/835587" class="project-card">
-      <div class="project-image-wrapper">
-        <img src="./images/thumbs/consumer.PNG" alt="Customer Exploration">
-      </div>
-      <div class="project-info">
-        <h3>Customer Exploration for Marketing Campaign</h3>
-        <p>Conducted an exploratory analysis in R to understand customer segmentation and response behavior in a direct marketing campaign.</p>
-      </div>
-    </a>
-  </div>
+          document.querySelectorAll('.project-item').forEach(item => {
+            const cat = item.dataset.category;
+            item.style.display = (filter === 'all' || cat === filter) ? '' : 'none';
+          });
 
-  <!-- Proyecto 3: US Elections — STATS -->
-  <div class="project-item-wrapper hidden" data-category="stats">
-    <a href="https://rpubs.com/Aguiar28D/734894" class="project-card">
-      <div class="project-image-wrapper">
-        <img src="./images/thumbs/map_us.PNG" alt="US Elections">
-      </div>
-      <div class="project-info">
-        <h3>US Presidential Elections</h3>
-        <p>Developed interactive maps and visualizations in R to explore geographic and demographic patterns from the US elections.
-        Focused on how states changed their preferences over time.</p>
-      </div>
-    </a>
-  </div>
+          document.querySelectorAll('.category-divider').forEach(div => {
+            const cats = (div.dataset.categoryLabel || '').split(' ');
+            div.style.display = (filter === 'all' || cats.includes(filter)) ? '' : 'none';
+          });
+        });
+      });
+    </script>
 
-  <!-- Proyecto 4: Reproduction Rights — STATS -->
-  <div class="project-item-wrapper hidden" data-category="stats">
-    <a href="https://rpubs.com/Aguiar28D/742803" class="project-card">
-      <div class="project-image-wrapper">
-        <img src="./images/thumbs/fertility.PNG" alt="Reproduction Rights">
-      </div>
-      <div class="project-info">
-        <h3>Reproduction Rights</h3>
-        <p>Used Google Trends API data and R to analyze search interest in reproductive health topics.
-        Connected spikes in searches to policy announcements and court rulings, highlighting the relationship between legal change and public behavior.</p>
-      </div>
-    </a>
-  </div>
-
-  <!-- Proyecto 5: Regression Discontinuity — STATS -->
-  <div class="project-item-wrapper hidden" data-category="stats">
-    <a href="https://rpubs.com/Aguiar28D/730948" class="project-card">
-      <div class="project-image-wrapper">
-        <img src="./images/thumbs/rd.PNG" alt="Regression Discontinuity">
-      </div>
-      <div class="project-info">
-        <h3>Regression Discontinuity</h3>
-        <p>Replicated Carpenter & Dobkin (2009) using R to demonstrate a regression discontinuity design applied to Medicare eligibility.
-        Focused on visual and statistical identification strategies for estimating causal effects using a sharp cutoff around age 65.</p>
-      </div>
-    </a>
-  </div>
-
-  <!-- Proyecto 6: DiD — STATS -->
-  <div class="project-item-wrapper hidden" data-category="stats">
-    <a href="https://rpubs.com/Aguiar28D/727687" class="project-card">
-      <div class="project-image-wrapper">
-        <img src="./images/thumbs/card.PNG" alt="Difference in Differences">
-      </div>
-      <div class="project-info">
-        <h3>Difference in Differences (DiD)</h3>
-        <p>Reproduced the famous Card & Krueger (1994) paper using R to evaluate minimum wage effects through a difference-in-differences design.
-        Compared employment changes in fast food restaurants between New Jersey and Pennsylvania, showcasing DiD intuition and assumptions.</p>
-      </div>
-    </a>
-  </div>
-
-</div>
-
-<script>
-  function filterProjects(filter) {
-    // Update active button
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-      btn.classList.remove('active');
-      if (btn.dataset.filter === filter) btn.classList.add('active');
-    });
-
-    // Show/hide projects
-    document.querySelectorAll('.project-item-wrapper').forEach(item => {
-      const category = item.dataset.category;
-      if (filter === 'all' || category === filter) {
-        item.classList.remove('hidden');
-      } else {
-        item.classList.add('hidden');
-      }
-    });
-  }
-</script>
-
-					</section>
-
-				<!-- Three -->
-					<section id="three">
-						<h2>Get In Touch</h2>
-						<p>Feel free to contact me.</p>
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">									
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="472620322e2635757f2307202a262e2b6924282a">[email&#160;protected]</a></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.twitter.com/aguiar28d" class="icon brands fa-x-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.github.com/aguiar28d" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/diego-aguiar-anzalas-2350a96b/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-					</ul>
-				
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.
+  </body>
+</html>
