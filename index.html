@@ -32,7 +32,7 @@
 
         <p class="sidebar-name">Diego Aguiar</p>
         <p class="sidebar-title">Sr. Data Analyst · Economist · AI</p>
-        <p class="sidebar-tagline">Turning data into decisions at Mercado Libre. UTEC + MIT Postgrad.</p>
+        <p class="sidebar-tagline">Turning data into decisions at Mercado Libre.</p>
 
         <hr class="sidebar-divider" />
 
@@ -71,46 +71,36 @@
         <p class="bio-intro">
           Economist & senior data analyst solving
           <span class="bio-highlight">real business problems</span>
-          with data, ML, and good judgment.
+          with data, ML, and an analytical approach.
         </p>
 
         <p class="bio-body">
-          Based in Montevideo, Uruguay, I hold two master's degrees in Economics from U.S. universities
-          and have over five years of experience turning messy data into clear decisions — currently at
-          Mercado Libre, where I focus on fraud prevention and business analytics. I'm expanding into
-          AI and Deep Learning through a postgraduate specialization at UTEC + MIT, and I've taught
-          university-level Macroeconomics, Calculus, and Applied Data Science.
+          Based in Montevideo, Uruguay, I hold two master's degrees in Economics from Arizona State University
+          and the University of Georgia, and a bachelor's degree from Universidad Católica del Uruguay.
+          Over five years of experience turning messy data into clear decisions — currently at Mercado Libre,
+          where I focus on fraud prevention and business analytics. I'm expanding into AI and Deep Learning
+          through a postgraduate specialization, and I've taught university-level Macroeconomics, Calculus,
+          Statistics, and Applied Data Science.
         </p>
-
-        <!-- Stats -->
-        <div class="bio-stats">
-          <div class="bio-stat-item">
-            <span class="bio-stat-number">5+</span>
-            <span class="bio-stat-label">Years Experience</span>
-          </div>
-          <div class="bio-stat-item">
-            <span class="bio-stat-number">11</span>
-            <span class="bio-stat-label">Projects</span>
-          </div>
-          <div class="bio-stat-item">
-            <span class="bio-stat-number">2</span>
-            <span class="bio-stat-label">Master's Degrees</span>
-          </div>
-          <div class="bio-stat-item">
-            <span class="bio-stat-number">3</span>
-            <span class="bio-stat-label">Languages</span>
-          </div>
-        </div>
 
         <!-- Skills -->
         <div class="skills-section">
 
           <div class="skills-group">
-            <span class="skills-group-label">Languages</span>
+            <span class="skills-group-label">Programming Languages</span>
             <div class="skills-pills">
               <span class="skill-pill highlight">Python</span>
               <span class="skill-pill highlight">SQL</span>
               <span class="skill-pill highlight">R</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <span class="skills-group-label">Spoken Languages</span>
+            <div class="skills-pills">
+              <span class="skill-pill">Spanish</span>
+              <span class="skill-pill">English</span>
+              <span class="skill-pill">Portuguese</span>
             </div>
           </div>
 
@@ -173,7 +163,7 @@
         <div class="project-list">
 
           <!-- ─ FEATURED AI PROJECTS ─ -->
-          <div class="category-divider" data-category-label="ai analysis econometrics">
+          <div class="category-divider" data-category="ai">
             <span>AI &amp; Machine Learning</span>
           </div>
 
@@ -266,7 +256,7 @@
           </div>
 
           <!-- ─ DATA ANALYSIS ─ -->
-          <div class="category-divider" data-category-label="analysis ai econometrics">
+          <div class="category-divider" data-category="analysis">
             <span>Data Analysis</span>
           </div>
 
@@ -347,7 +337,7 @@
           </div>
 
           <!-- ─ ECONOMETRICS ─ -->
-          <div class="category-divider" data-category-label="econometrics ai analysis">
+          <div class="category-divider" data-category="econometrics">
             <span>Statistics &amp; Econometrics</span>
           </div>
 
@@ -455,13 +445,11 @@
           const filter = btn.dataset.filter;
 
           document.querySelectorAll('.project-item').forEach(item => {
-            const cat = item.dataset.category;
-            item.style.display = (filter === 'all' || cat === filter) ? '' : 'none';
+            item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
           });
 
           document.querySelectorAll('.category-divider').forEach(div => {
-            const cats = (div.dataset.categoryLabel || '').split(' ');
-            div.style.display = (filter === 'all' || cats.includes(filter)) ? '' : 'none';
+            div.style.display = (filter === 'all' || div.dataset.category === filter) ? '' : 'none';
           });
         });
       });
